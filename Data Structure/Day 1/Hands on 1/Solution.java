@@ -3,15 +3,15 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int[] array = new int[scan.nextInt()];
-        for(int i = 0; i < array.length; i++){
-            array[i] = scan.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[sc.nextInt()];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = sc.nextInt();
         }
-        scan.close();
+        sc.close();
         
-        for(int i = array.length - 1; i >= 0; i--){
-            System.out.print(array[i] + " ");
+        for(int i = arr.length - 1; i >= 0; i--){
+            System.out.print(arr[i] + " ");
         }
     }
 }
