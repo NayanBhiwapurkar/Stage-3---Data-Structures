@@ -4,12 +4,14 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class ArrayManipulations {
+   
     static long arrayManipulation(int n, int[][] queries) {
         long max = Integer.MIN_VALUE;
         long[] D = new long[n + 1];
         long[] A = new long[n];
         D[0] = A[0];
         D[n] = 0L;
+        
         for (int i = 1; i < n; i++)
             D[i] = A[i] - A[i - 1];
 
